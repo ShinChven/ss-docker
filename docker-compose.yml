@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  ssserver:
+    restart: always
+    image: sserver
+    ports:
+    - "8388:8388"
+    volumes:
+    - config/:/etc/shadowsocks/
